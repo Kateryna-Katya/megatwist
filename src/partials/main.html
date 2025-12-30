@@ -32,3 +32,44 @@ into the forest</p>
         AS SUCCESS IN REAL LIFE ACTIVITIES. GAME IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY PLAYING THIS GAME.</p>
     </div>
 </section>
+<section class="demo-section" id="demo">
+    <div class="container demo-container">
+        <h2 class="demo-title">Game</h2>
+        <div class="demo-wrapper">
+            <picture>
+                <source srcset="
+                /img/demo/demo-desk-min.png 1x,
+                /img/demo/demo-desk@2x-min.png 2x
+                " media="(min-width: 1440px)" />
+                <source srcset="
+                /img/demo/demo-mob.png 1x,
+                /img/demo/demo-mob@2x-min.png 2x
+                " media="(max-width: 1439px)" />
+                <img class="game-img" src="/img/demo/demo-mob.png" alt="Forest Dreams" loading="lazy" />
+            </picture>
+
+
+            <div class="iframe-wrapper">
+                <iframe id="gameIframe"></iframe>
+
+                <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+                    <img class="close-img" src="/img/demo/close.png" alt="Close">
+                </button>
+            </div>
+        </div>
+        <a class="demo-btn" href="#" data-game-url="https://demo.evoplay.games/demo/fullstate/html5/evoplay/forestdreams"
+            target="gameIframe">
+            <picture>
+                <source srcset="
+                /img/demo/btn-desk.png 1x,
+                /img/demo/btn-desk@2x.png 2x
+                    " media="(min-width: 1439px)" />
+                <source srcset="
+                /img/demo/btn-mob.png 1x,
+                /img/demo/btn-mob@2x.png 2x
+                    " media="(max-width: 1438px)" />
+                <img class="demo-img" src="/img/demo/btn-mob.png" alt="Play Free" loading="lazy" />
+            </picture>
+        </a>
+    </div>
+</section>
