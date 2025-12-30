@@ -72,3 +72,26 @@
     margin-right: auto;
     margin-top: 12px;
 }
+@media only screen and (min-width: 1440px) {
+  .hero-section{
+    background-image: url("/img/hero/desk.png");
+    height: 800px;
+  }
+.hero-wrapper{
+    width: 770px;
+        margin-left: auto;
+        margin-right: auto;
+            margin-top: 240px;
+}
+.hero-subtitle{
+    font-size: 36px;
+        line-height: 1.11111;
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.hero-text{
+    font-size: 18px;
+        line-height: 1.55556;
+}
+}
