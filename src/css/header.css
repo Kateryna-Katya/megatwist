@@ -1,44 +1,142 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+border-radius: 20px;
+  width: 335px;
+  height: 84px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #062121;
 }
-.nav {
+
+.header-container {
+  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
+
+
+.menu-button {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  border: none;
+border-radius: 121px;
+padding: 14px 20px 10px;
+  width: 56px;
+  height: 36px;
+  background: #47cc5d;
+  margin-left: auto;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.navigation-list {
+  display: none;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+
+/* Modal */
+.modal {
+  display: none;
+background: #062121;
+border-radius: 20px;
+  padding: 24px 40px;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  position: fixed;
+  top: 100px;
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  transform: translateX(-50%);
+  transition: visibility 0.3s ease;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: start;
+}
+
+
+.menu-list-item {
+background: #074b4b;
+  opacity: 0.6;
+  border-radius: 121px;
+    padding: 10px 20px;
+    width: 101px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      color: #fff;
+  transition: all 0.2s ease;
+}
+
+.menu-list-item:hover,
+.menu-list-item:focus,
+.menu-list-item.active {
+background: #47cc5d;
+color: #051313;
+}
+.header-logo{
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .header {
+width: 1280px;
+  height: 96px;
+  margin-top: 20px;
+  }
+
+  .header-container {
+    padding: 24px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+.header-logo{
+  display: block;
+  margin-right: 60px;
+}
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+
+  .navigation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 121px;
+padding: 10px 14px;
+
+  height: 48px;
+  background: #074b4b;
+    opacity: 0.6;
+    font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      color: #fff;
+      transition: all 0.2s ease;
+  }
+
+  .navigation-item:hover,
+  .navigation-item:focus,
+  .navigation-item.active {
+background: #47cc5d;
+color: #051313;
+  }
+
 }
