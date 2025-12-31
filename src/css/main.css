@@ -322,3 +322,51 @@ width: 1178px;
     font-size: 20px;
    }
 }
+/* You May Also Like */
+.like-section{
+    background-image: url("/img/like/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 1286px;
+}
+.like-title-list{
+    margin-top: 40px;
+        font-weight: 700;
+        font-size: 28px;
+}
+.like-list{
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.like-subtitle{
+    margin-top: 40px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.33333;
+        color: #8eff2f;
+}
+@media only screen and (min-width: 1440px) {
+   .like-section{
+    background-image: url("/img/like/desk.png");
+    height: 979px;
+   }
+   .mob{
+    display: none;
+   }
+   .like-title{
+    text-align: left;
+   }
+   .like-title-list{
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 1.25;
+   }
+   .like-list{
+    font-size: 24px;
+    line-height: 1.33333;
+   }
+}
+
