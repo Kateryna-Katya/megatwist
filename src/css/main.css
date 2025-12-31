@@ -242,3 +242,43 @@ width: 231px;
     background-color: #fff;
     border-radius: 10px;
 }
+@media only screen and (min-width: 1440px) {
+   .demo-section{
+    background-image: url("/img/demo/desk-min.png");
+   }
+   .demo-wrapper {
+       position: relative;
+       max-width: 1200px;
+       margin:0 auto;
+       height: 625px;
+   }
+
+   .game-img {
+width: 1178px;
+    height: 625px;
+   }
+   /* ===== IFRAME ===== */
+
+   .iframe-wrapper {
+       position: absolute;
+       top: 29%;
+       left: 47%;
+       transform: translateX(-48%);
+       width: 68%;
+       height: 54%;
+       z-index: 20;
+       pointer-events: none;
+   }
+
+   #gameIframe {
+       width: 102%;
+       height: 111%;
+
+   }
+   #closeIframeBtn {
+       position: absolute;
+       top: 40px;
+       right: 10px;
+     
+   }
+}
