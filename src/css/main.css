@@ -282,3 +282,43 @@ width: 1178px;
      
    }
 }
+/* Forest mechanics */
+.forest-section{
+    background-image: url("/img/forest/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.forest-title{
+    text-align: left;
+}
+.forest-wraper{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.forest-subtitle{
+    font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.55556;
+        color: #fff;
+}
+@media only screen and (min-width: 1440px) {
+   .forest-section{
+    background-image: url("/img/forest/desk.png");
+   }
+   .forest-title{
+    margin-left: 560px;
+   }
+   .forest-wraper{
+    margin-top: 60px;
+    width: 668px;
+    margin-left: 560px;
+    gap: 30px;
+   }
+   .forest-subtitle{
+    font-size: 20px;
+   }
+}
